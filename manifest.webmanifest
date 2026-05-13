@@ -4,7 +4,14 @@
   "start_url": "/PRYWATNY-DOSTEP/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#111111",
   "orientation": "portrait",
-  "icons": []
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
