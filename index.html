@@ -5,17 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="manifest" href="manifest.webmanifest">
   <title>Prywatny Dostęp</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 24px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-top: 60px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #ccc;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin-top: 16px;
+      border: none;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      background: #2c2c2c;
+      color: white;
+    }
+
+    .small {
+      margin-top: 40px;
+      color: #888;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; text-align:center; padding:40px;">
+<body>
 
-<h1>Prywatny Dostęp</h1>
+<div class="container">
 
-<p>NDS</p>
+  <h1>Prywatny Dostęp</h1>
 
-<button onclick="openNavigation()">
-  Prowadź mnie
-</button>
+  <div class="subtitle">
+    Otrzymałeś prywatny dostęp<br>
+    do nieruchomości.
+  </div>
+
+  <div class="card">
+    <h2>Dojazd do nieruchomości</h2>
+
+    <p>
+      Kliknij poniżej,<br>
+      aby uruchomić nawigację.
+    </p>
+
+    <button class="button primary" onclick="openNavigation()">
+      Prowadź mnie
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>Pełna oferta</h2>
+
+    <p>
+      Po prezentacji nieruchomości<br>
+      otrzymasz pełny dostęp do:
+    </p>
+
+    <p>
+      • zdjęć<br>
+      • dokumentów<br>
+      • FAQ<br>
+      • aktualizacji<br>
+      • powiadomień push
+    </p>
+
+    <button class="button secondary">
+      Dostęp po oględzinach
+    </button>
+  </div>
+
+  <div class="small">
+    NDS — Narzędzie do Domykania Sprzedaży
+  </div>
+
+</div>
 
 <script>
 function openNavigation() {
