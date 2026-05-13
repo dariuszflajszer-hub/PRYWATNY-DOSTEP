@@ -1,0 +1,10 @@
+{
+  "name": "Prywatny Dostęp",
+  "short_name": "NDS",
+  "start_url": "/PRYWATNY-DOSTEP/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": []
+}
