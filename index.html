@@ -1,140 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="manifest" href="manifest.webmanifest">
-  <title>Prywatny Dostęp</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
-
-    .container {
-      padding: 40px 24px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-top: 60px;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      color: #ccc;
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 40px;
-    }
-
-    .card {
-      background: #1f1f1f;
-      border-radius: 18px;
-      padding: 24px;
-      margin-bottom: 24px;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      padding: 18px;
-      margin-top: 16px;
-      border: none;
-      border-radius: 14px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .primary {
-      background: white;
-      color: black;
-    }
-
-    .secondary {
-      background: #2c2c2c;
-      color: white;
-    }
-
-    .small {
-      margin-top: 40px;
-      color: #888;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="manifest" href="manifest.webmanifest">
+<title>Prywatny Dostęp</title>
+<style>
+body{margin:0;padding:0;font-family:Arial,sans-serif;background:#111;color:#fff;text-align:center}
+.container{padding:40px 24px;max-width:500px;margin:auto}
+h1{font-size:42px;margin-top:80px;margin-bottom:16px}
+.subtitle{color:#ccc;font-size:20px;line-height:1.6;margin-bottom:50px}
+.card{background:#1f1f1f;border-radius:20px;padding:32px 24px}
+.button{display:block;width:100%;padding:20px;margin-top:24px;border:none;border-radius:16px;font-size:20px;font-weight:bold;cursor:pointer;background:#fff;color:#000}
+.small{margin-top:40px;color:#888;font-size:14px;line-height:1.5}
+</style>
 </head>
-
 <body>
-
 <div class="container">
-
-  <h1>Prywatny Dostęp</h1>
-
-  <div class="subtitle">
-    Otrzymałeś prywatny dostęp<br>
-    do nieruchomości.
-  </div>
-
-  <div class="card">
-    <h2>Dojazd do nieruchomości</h2>
-
-    <p>
-      Kliknij poniżej,<br>
-      aby uruchomić nawigację.
-    </p>
-
-    <button class="button primary" onclick="openNavigation()">
-      Prowadź mnie
-    </button>
-  </div>
-
-  <div class="card">
-    <h2>Pełna oferta</h2>
-
-    <p>
-      Po prezentacji nieruchomości<br>
-      otrzymasz pełny dostęp do:
-    </p>
-
-    <p>
-      • zdjęć<br>
-      • dokumentów<br>
-      • FAQ<br>
-      • aktualizacji<br>
-      • powiadomień push
-    </p>
-
-    <button class="button secondary">
-      Dostęp po oględzinach
-    </button>
-  </div>
-
-  <div class="small">
-    NDS — Narzędzie do Domykania Sprzedaży
-  </div>
-
+<h1>Prywatny Dostęp</h1>
+<div class="subtitle">
+Otrzymałeś prywatny dostęp<br>
+do dojazdu na prezentację nieruchomości.
 </div>
-
+<div class="card">
+<h2>Uruchom nawigację</h2>
+<p>Kliknij przycisk poniżej,<br>aby rozpocząć dojazd.</p>
+<button class="button" onclick="openNavigation()">Prowadź mnie</button>
+</div>
+<div class="small">Po prezentacji możesz otrzymać pełny dostęp do oferty.</div>
+</div>
 <script>
-function openNavigation() {
-  const lat = 52.2297;
-  const lng = 21.0122;
-
-  const url =
-    `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-
-  window.location.href = url;
+function openNavigation(){
+const lat=52.2297;
+const lng=21.0122;
+const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+window.location.href=url;
 }
 </script>
-
 </body>
 </html>
