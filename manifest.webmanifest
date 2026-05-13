@@ -3,8 +3,8 @@
   "short_name": "NDS",
   "start_url": "/PRYWATNY-DOSTEP/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#111111",
+  "background_color": "#f4f7fb",
+  "theme_color": "#f4f7fb",
   "orientation": "portrait",
   "icons": [
     {
