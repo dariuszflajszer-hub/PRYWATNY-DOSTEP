@@ -13,8 +13,8 @@ body::before{content:"";position:fixed;width:420px;height:420px;background:radia
 .logo{width:120px;display:block;margin:20px auto 10px;filter:drop-shadow(0 12px 24px rgba(180,0,16,.22))}
 .hero{text-align:center;font-size:38px;font-weight:700;margin:12px 0 10px;letter-spacing:-1px}
 .subtitle{text-align:center;color:#5d6878;font-size:18px;line-height:1.5;margin-bottom:26px}
-.video-wrapper{border-radius:28px;overflow:hidden;box-shadow:0 18px 40px rgba(29,36,48,.18);margin-bottom:18px}
-.video-wrapper iframe{width:100%;height:315px;border:none;display:block}
+.video-wrapper{border-radius:28px;overflow:hidden;box-shadow:0 18px 40px rgba(29,36,48,.18);margin-bottom:18px;background:#000}
+.video-wrapper video{width:100%;display:block}
 .gallery{display:flex;overflow-x:auto;gap:14px;padding-bottom:10px;scroll-snap-type:x mandatory}
 .gallery img{width:100%;max-width:520px;height:320px;object-fit:cover;border-radius:28px;flex-shrink:0;scroll-snap-align:start;box-shadow:0 18px 40px rgba(29,36,48,.18)}
 .card{background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.5);border-radius:28px;padding:28px 24px;margin-top:22px;box-shadow:0 18px 45px rgba(29,36,48,.10)}
@@ -26,12 +26,10 @@ h2{font-size:30px;margin:0 0 14px}
 p{font-size:17px;line-height:1.7;color:#586273}
 .button{display:block;width:100%;padding:22px;margin-top:24px;border:none;border-radius:18px;font-size:22px;font-weight:700;cursor:pointer;background:linear-gradient(180deg,#ff3b30 0%,#cc0014 100%);color:#fff;box-shadow:0 14px 28px rgba(204,0,20,.25)}
 .faq-item{padding:16px 0;border-bottom:1px solid rgba(0,0,0,.08)}
-.question{font-weight:700;margin-bottom:8px}
-.answer{color:#5d6878;line-height:1.6}
+.question{font-weight:700;margin-bottom:8px}.answer{color:#5d6878;line-height:1.6}
 .contact-buttons{display:flex;gap:12px;margin-top:20px}
 .contact-button{flex:1;padding:18px;border-radius:16px;text-align:center;font-weight:700;text-decoration:none}
-.phone{background:#1d2430;color:#fff}
-.whatsapp{background:#25D366;color:#fff}
+.phone{background:#1d2430;color:#fff}.whatsapp{background:#25D366;color:#fff}
 .small{text-align:center;margin-top:34px;color:#7b8796;font-size:14px}
 </style>
 </head>
@@ -41,63 +39,24 @@ p{font-size:17px;line-height:1.7;color:#586273}
 <div class="hero">Nowoczesny dom premium</div>
 <div class="subtitle">Prywatny dostęp do prezentacji nieruchomości.</div>
 <div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/Scxs7L0vhZ4?rel=0&modestbranding=1" title="Prezentacja nieruchomości" allowfullscreen></iframe>
+<video controls playsinline poster="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop">
+<source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+</video>
 </div>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop" alt="Dom 1">
 <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop" alt="Dom 2">
 <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Dom 3">
 </div>
-<div class="card">
-<h2>Dojazd na prezentację</h2>
-<p>Kliknij poniżej, aby uruchomić trasę do nieruchomości.</p>
-<button class="button" onclick="openNavigation()">Rozpocznij dojazd</button>
-</div>
-<div class="card">
-<h2>Najważniejsze informacje</h2>
-<div class="info-grid">
-<div class="info-item"><div class="label">Cena</div><div class="value">2 490 000 zł</div></div>
-<div class="info-item"><div class="label">Powierzchnia</div><div class="value">248 m²</div></div>
-<div class="info-item"><div class="label">Działka</div><div class="value">1200 m²</div></div>
-<div class="info-item"><div class="label">Pokoje</div><div class="value">6</div></div>
-</div>
-</div>
-<div class="card">
-<h2>Co warto wiedzieć</h2>
-<p>• ogrzewanie podłogowe<br>• światłowód<br>• monitoring<br>• nowy dach<br>• automatyczne rolety<br>• garaż na 2 auta</p>
-</div>
-<div class="card">
-<h2>FAQ LIVE</h2>
-<div class="faq-item">
-<div class="question">Czy dom był remontowany?</div>
-<div class="answer">Tak. Generalny remont wykonano w 2023 roku.</div>
-</div>
-<div class="faq-item">
-<div class="question">Jakie są miesięczne koszty?</div>
-<div class="answer">Średni koszt utrzymania wynosi około 1400 zł miesięcznie.</div>
-</div>
-<div class="faq-item" style="border-bottom:none">
-<div class="question">Czy możliwy jest szybki termin wydania?</div>
-<div class="answer">Tak. Nieruchomość może zostać przekazana w ciągu 30 dni.</div>
-</div>
-</div>
-<div class="card">
-<h2>Kontakt</h2>
-<p>Masz pytania? Skontaktuj się bezpośrednio.</p>
-<div class="contact-buttons">
-<a class="contact-button phone" href="tel:+48123456789">Zadzwoń</a>
-<a class="contact-button whatsapp" href="https://wa.me/48123456789">WhatsApp</a>
-</div>
-</div>
+<div class="card"><h2>Dojazd na prezentację</h2><p>Kliknij poniżej, aby uruchomić trasę do nieruchomości.</p><button class="button" onclick="openNavigation()">Rozpocznij dojazd</button></div>
+<div class="card"><h2>Najważniejsze informacje</h2><div class="info-grid"><div class="info-item"><div class="label">Cena</div><div class="value">2 490 000 zł</div></div><div class="info-item"><div class="label">Powierzchnia</div><div class="value">248 m²</div></div><div class="info-item"><div class="label">Działka</div><div class="value">1200 m²</div></div><div class="info-item"><div class="label">Pokoje</div><div class="value">6</div></div></div></div>
+<div class="card"><h2>Co warto wiedzieć</h2><p>• ogrzewanie podłogowe<br>• światłowód<br>• monitoring<br>• nowy dach<br>• automatyczne rolety<br>• garaż na 2 auta</p></div>
+<div class="card"><h2>FAQ LIVE</h2><div class="faq-item"><div class="question">Czy dom był remontowany?</div><div class="answer">Tak. Generalny remont wykonano w 2023 roku.</div></div><div class="faq-item"><div class="question">Jakie są miesięczne koszty?</div><div class="answer">Średni koszt utrzymania wynosi około 1400 zł miesięcznie.</div></div><div class="faq-item" style="border-bottom:none"><div class="question">Czy możliwy jest szybki termin wydania?</div><div class="answer">Tak. Nieruchomość może zostać przekazana w ciągu 30 dni.</div></div></div>
+<div class="card"><h2>Kontakt</h2><p>Masz pytania? Skontaktuj się bezpośrednio.</p><div class="contact-buttons"><a class="contact-button phone" href="tel:+48123456789">Zadzwoń</a><a class="contact-button whatsapp" href="https://wa.me/48123456789">WhatsApp</a></div></div>
 <div class="small">Prywatny Dostęp</div>
 </div>
 <script>
-function openNavigation(){
-const lat=52.2297;
-const lng=21.0122;
-const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
-window.location.href=url;
-}
+function openNavigation(){const lat=52.2297;const lng=21.0122;const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;window.location.href=url;}
 </script>
 </body>
 </html>
