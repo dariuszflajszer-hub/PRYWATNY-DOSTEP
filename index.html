@@ -63,8 +63,9 @@ p{font-size:17px;line-height:1.7;color:#586273}
 </div>
 <script>
 function openNavigation(){
-const destination='Karmelkowa 45, Wrocław';
-const url=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+const lat=52.2297;
+const lng=21.0122;
+const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 window.location.href=url;
 }
 </script>
