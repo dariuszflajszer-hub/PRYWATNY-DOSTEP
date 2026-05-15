@@ -23,17 +23,13 @@ body::before{content:"";position:fixed;width:420px;height:420px;background:radia
 .gallery{display:flex;overflow-x:auto;gap:14px;padding:0 40px 14px 4px;scroll-snap-type:x mandatory;scroll-padding-left:4px;-webkit-overflow-scrolling:touch}
 .gallery::-webkit-scrollbar{display:none}
 .gallery img{width:calc(100vw - 110px);max-width:470px;height:320px;object-fit:cover;border-radius:28px;flex:0 0 auto;scroll-snap-align:start;scroll-snap-stop:always;box-shadow:0 18px 40px rgba(29,36,48,.18)}
-.dots{display:flex;justify-content:center;gap:8px;margin-top:6px}
-.dot{width:8px;height:8px;border-radius:50%;background:#c8d0db}.dot.active{background:#cc0014;transform:scale(1.2)}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:6px}.dot{width:8px;height:8px;border-radius:50%;background:#c8d0db}.dot.active{background:#cc0014;transform:scale(1.2)}
 .card{background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.5);border-radius:28px;padding:28px 24px;margin-top:22px;box-shadow:0 18px 45px rgba(29,36,48,.10)}
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
-.info-item{background:rgba(244,247,251,.9);border-radius:18px;padding:18px}.label{font-size:13px;color:#7b8796;text-transform:uppercase;letter-spacing:.8px}.value{font-size:22px;font-weight:700;margin-top:6px}
-h2{font-size:30px;margin:0 0 14px}
-p{font-size:17px;line-height:1.7;color:#586273}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.info-item{background:rgba(244,247,251,.9);border-radius:18px;padding:18px}.label{font-size:13px;color:#7b8796;text-transform:uppercase;letter-spacing:.8px}.value{font-size:22px;font-weight:700;margin-top:6px}
+h2{font-size:30px;margin:0 0 14px}p{font-size:17px;line-height:1.7;color:#586273}
 .button{display:block;width:100%;padding:22px;margin-top:24px;border:none;border-radius:18px;font-size:22px;font-weight:700;cursor:pointer;background:linear-gradient(180deg,#ff3b30 0%,#cc0014 100%);color:#fff;box-shadow:0 14px 28px rgba(204,0,20,.25)}
 .faq-item{padding:16px 0;border-bottom:1px solid rgba(0,0,0,.08)}.question{font-weight:700;margin-bottom:8px}.answer{color:#5d6878;line-height:1.6}
-.contact-buttons{display:flex;gap:12px;margin-top:20px}.contact-button{flex:1;padding:18px;border-radius:16px;text-align:center;font-weight:700;text-decoration:none}.phone{background:#1d2430;color:#fff}.whatsapp{background:#25D366;color:#fff}
-.small{text-align:center;margin-top:34px;color:#7b8796;font-size:14px}
+.contact-buttons{display:flex;gap:12px;margin-top:20px}.contact-button{flex:1;padding:18px;border-radius:16px;text-align:center;font-weight:700;text-decoration:none}.phone{background:#1d2430;color:#fff}.whatsapp{background:#25D366;color:#fff}.small{text-align:center;margin-top:34px;color:#7b8796;font-size:14px}
 </style>
 </head>
 <body>
@@ -41,40 +37,12 @@ p{font-size:17px;line-height:1.7;color:#586273}
 <img class="logo" src="icon.svg" alt="Prywatny Dostęp">
 <div class="hero">Nowoczesny dom premium</div>
 <div class="subtitle">Prywatny dostęp do prezentacji nieruchomości.</div>
-<div class="video-wrapper">
-<div class="tour-card">
-<div class="tour-icon">⌂</div>
-<div class="tour-title">Spacer 3D</div>
-<p class="tour-text">Zobacz krótką prezentację przestrzeni z dwóch panoram.</p>
-<a class="tour-link" href="https://extraordinary-rugelach-259d47.netlify.app/" target="_blank" rel="noopener">Otwórz spacer 3D</a>
-<div class="tour-note">Spacer otworzy się w nowej karcie.</div>
-</div>
-</div>
+<div class="video-wrapper"><div class="tour-card"><div class="tour-icon">⌂</div><div class="tour-title">Spacer 3D</div><p class="tour-text">Zobacz krótką prezentację przestrzeni z dwóch panoram.</p><a class="tour-link" href="https://playful-rolypoly-78fa36.netlify.app/" target="_blank" rel="noopener">Otwórz spacer 3D</a><div class="tour-note">Spacer otworzy się w nowej karcie.</div></div></div>
 <div class="gallery-wrapper">
 <div class="gallery-hint">Przesuń zdjęcia w lewo →</div>
 <div class="gallery" id="gallery">
-<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop" alt="Dom 1">
-<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop" alt="Dom 2">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Dom 3">
-<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop" alt="Dom 4">
-<img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1400&auto=format&fit=crop" alt="Dom 5">
-<img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1400&auto=format&fit=crop" alt="Dom 6">
-<img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop" alt="Dom 7">
-<img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1400&auto=format&fit=crop" alt="Dom 8">
-<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop" alt="Dom 9">
-<img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1400&auto=format&fit=crop" alt="Dom 10">
-<img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1400&auto=format&fit=crop" alt="Dom 11">
-<img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=1400&auto=format&fit=crop" alt="Dom 12">
-<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1400&auto=format&fit=crop" alt="Dom 13">
-</div>
-<div class="dots">
-<div class="dot active"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
-</div>
-</div>
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1400&auto=format&fit=crop" alt="Dom 1"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop" alt="Dom 2"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Dom 3"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop" alt="Dom 4"><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1400&auto=format&fit=crop" alt="Dom 5"><img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1400&auto=format&fit=crop" alt="Dom 6"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop" alt="Dom 7"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1400&auto=format&fit=crop" alt="Dom 8"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop" alt="Dom 9"><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1400&auto=format&fit=crop" alt="Dom 10"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1400&auto=format&fit=crop" alt="Dom 11"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=1400&auto=format&fit=crop" alt="Dom 12"><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1400&auto=format&fit=crop" alt="Dom 13">
+</div><div class="dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
 <div class="card"><h2>Dojazd na prezentację</h2><p>Kliknij poniżej, aby uruchomić trasę do nieruchomości.</p><button class="button" onclick="openNavigation()">Rozpocznij dojazd</button></div>
 <div class="card"><h2>Najważniejsze informacje</h2><div class="info-grid"><div class="info-item"><div class="label">Cena</div><div class="value">2 490 000 zł</div></div><div class="info-item"><div class="label">Powierzchnia</div><div class="value">248 m²</div></div><div class="info-item"><div class="label">Działka</div><div class="value">1200 m²</div></div><div class="info-item"><div class="label">Pokoje</div><div class="value">6</div></div></div></div>
 <div class="card"><h2>Co warto wiedzieć</h2><p>• ogrzewanie podłogowe<br>• światłowód<br>• monitoring<br>• nowy dach<br>• automatyczne rolety<br>• garaż na 2 auta</p></div>
@@ -82,8 +50,6 @@ p{font-size:17px;line-height:1.7;color:#586273}
 <div class="card"><h2>Kontakt</h2><p>Masz pytania? Skontaktuj się bezpośrednio.</p><div class="contact-buttons"><a class="contact-button phone" href="tel:+48123456789">Zadzwoń</a><a class="contact-button whatsapp" href="https://wa.me/?text=Dzień%20dobry,%20mam%20pytanie%20dotyczące%20nieruchomości.">WhatsApp</a></div></div>
 <div class="small">Prywatny Dostęp</div>
 </div>
-<script>
-function openNavigation(){const lat=52.2297;const lng=21.0122;const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;window.location.href=url;}
-</script>
+<script>function openNavigation(){const lat=52.2297;const lng=21.0122;const url=`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;window.location.href=url;}</script>
 </body>
 </html>
